@@ -20,4 +20,7 @@ promptButton.addEventListener("click", () => {
 
   // clear existing grid
   container.innerHTML = "";
+
+  // calculate size of each grid cell in percentage
+  const gridCellSize = 100 / rowNum;
 });
