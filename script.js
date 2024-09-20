@@ -23,4 +23,9 @@ promptButton.addEventListener("click", () => {
 
   // calculate size of each grid cell in percentage
   const gridCellSize = 100 / rowNum;
+
+  for (let i = 0; i < rowNum * rowNum; i++) {
+    const grid = document.createElement("div");
+    grid.classList.add("grid-cell");
+  }
 });
