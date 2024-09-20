@@ -27,5 +27,8 @@ promptButton.addEventListener("click", () => {
   for (let i = 0; i < rowNum * rowNum; i++) {
     const grid = document.createElement("div");
     grid.classList.add("grid-cell");
+    grid.style.flex = `0 0 ${gridCellSize}%`;
+    grid.style.width = `${gridCellSize}%`;
+    grid.style.height = `${gridCellSize}%`;
   }
 });
