@@ -34,3 +34,7 @@ promptButton.addEventListener("click", () => {
     container.appendChild(grid);
   }
 });
+
+function randomShade() {
+  return Math.floor(Math.random() * 255);
+}
