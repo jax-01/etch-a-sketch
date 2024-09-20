@@ -17,4 +17,7 @@ promptButton.addEventListener("click", () => {
   do {
     rowNum = +prompt("Enter the number of squares per side for the new grid (max 100)", 1);
   } while (rowNum < 1 || rowNum > 100);
+
+  // clear existing grid
+  container.innerHTML = "";
 });
