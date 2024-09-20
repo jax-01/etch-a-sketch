@@ -9,7 +9,7 @@ for (let i = 0; i < 16 * 16; i++) {
 
 container.addEventListener("mouseover", (event) => {
   console.log(event.target);
-  event.target.classList.add("shade");
+  event.target.style.backgroundColor = `rgb(${randomValue()}, ${randomValue()}, ${randomValue()})`;
 });
 
 promptButton.addEventListener("click", () => {
@@ -34,3 +34,7 @@ promptButton.addEventListener("click", () => {
     container.appendChild(grid);
   }
 });
+
+function randomValue() {
+  return Math.floor(Math.random() * 255);
+}
