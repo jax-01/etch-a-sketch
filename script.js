@@ -5,3 +5,8 @@ for (let i = 0; i < 16 * 16; i++) {
   grid.classList.add("grid-cell");
   container.appendChild(grid);
 }
+
+container.addEventListener("mouseover", (event) => {
+  console.log(event.target);
+  event.target.classList.add("shade");
+});
