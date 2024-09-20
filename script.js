@@ -30,5 +30,7 @@ promptButton.addEventListener("click", () => {
     grid.style.flex = `0 0 ${gridCellSize}%`;
     grid.style.width = `${gridCellSize}%`;
     grid.style.height = `${gridCellSize}%`;
+
+    container.appendChild(grid);
   }
 });
