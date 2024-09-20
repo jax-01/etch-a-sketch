@@ -15,3 +15,7 @@
   border: 1px solid #ddd;
   box-sizing: border-box;           /* Ensure padding/borders are included in the cell's size*/
 }
+
+.shade {
+  background-color: red;
+}
